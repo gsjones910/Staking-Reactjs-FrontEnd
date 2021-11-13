@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
             display: 'flex',
             flexDirection: 'column',
             // backgroundColor: '#faf4',
-            padding: '6em 10em',
+            padding: '2em 10em',
             [theme.breakpoints.down('sm')]: {
                 padding: '2em 2em',
             },
@@ -174,7 +174,7 @@ const Content : React.FC<Props> = ({
                 </Grid>
             </Container>
             <Container maxWidth="xl" className={classes.main}>
-                <LText >Total Supply : {stakingAmount} ETH</LText>
+                <LText >Total : {stakingAmount} ETH</LText>
                 <Grid container spacing={2}>
                     <AmountInput value={withdrawAmount} onChange={(e) => setWithdrawAmount(e.target.value)} type='number'/>
                     <OutlineButton onClick={(e) => onClickWithdraw()}>Withdraw</OutlineButton>
